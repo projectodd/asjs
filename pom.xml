@@ -164,6 +164,20 @@
         <groupId>org.dynjs</groupId>
         <artifactId>dynjs</artifactId>
         <version>${version.dynjs}</version>
+        <exclusions>
+          <exclusion>
+            <groupId>antlr</groupId>
+            <artifactId>antlr</artifactId>
+          </exclusion>
+          <exclusion>
+            <groupId>org.antlr</groupId>
+            <artifactId>stringtemplate</artifactId>
+          </exclusion>
+          <exclusion>
+            <groupId>args4j</groupId>
+            <artifactId>args4j</artifactId>
+          </exclusion>
+        </exclusions>
       </dependency>
 
       <dependency>
