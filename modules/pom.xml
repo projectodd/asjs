@@ -10,13 +10,13 @@
   <modelVersion>4.0.0</modelVersion>
   <artifactId>asjs-modules-parent</artifactId>
   <packaging>pom</packaging>
-  <name>as.js Modules Parent</name>
+  <name>AS.js Modules Parent</name>
   <description />
 
   <modules>
+    <module>core</module>
 <!--
     <module>bootstrap</module>
-    <module>core</module>
     <module>cache</module>
     <module>services</module>
     <module>web</module>
@@ -200,7 +200,7 @@
                     <script>
                       load '${project.basedir}/../../build/assembly/lib/assembly_tool.rb'
                       module_name = '${project.artifactId}'
-                      module_name.gsub!(/torquebox-/, '' )
+                      module_name.gsub!(/asjs-/, '' )
                       AssemblyTool.install_module( module_name, '${project.basedir}/target/${project.artifactId}-module' )
                     </script>
                   </configuration>

@@ -12,7 +12,7 @@
   <artifactId>asjs-parent</artifactId>
   <version>1.0.0-SNAPSHOT</version>
   <packaging>pom</packaging>
-  <name>as.js</name>
+  <name>AS.js</name>
   <url>http://projectodd.org/</url>
 
   <description>
@@ -36,10 +36,7 @@
   <modules>
     <module>support</module>
     <module>modules</module>
-<!--
-    <module>gems</module>
     <module>build</module>
--->
   </modules>
 
   <profiles>
@@ -158,6 +155,18 @@
         <scope>import</scope>
       </dependency>
       <dependency>
+        <groupId>org.projectodd</groupId>
+        <artifactId>polyglot-core</artifactId>
+        <version>${version.polyglot}</version>
+      </dependency>
+
+      <dependency>
+        <groupId>org.dynjs</groupId>
+        <artifactId>dynjs</artifactId>
+        <version>${version.dynjs}</version>
+      </dependency>
+
+      <dependency>
         <groupId>junit</groupId>
         <artifactId>junit</artifactId>
         <version>${version.junit}</version>
@@ -175,6 +184,8 @@
     <version.jruby>1.6.7</version.jruby>
     <version.jbossas>7.1.0.Final</version.jbossas>
     <version.dynjs>1.0-SNAPSHOT</version.dynjs>
+
+    <version.jruby-maven-plugins>0.28.4</version.jruby-maven-plugins> 
 
   </properties>
 

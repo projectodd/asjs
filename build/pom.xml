@@ -8,13 +8,22 @@
   </parent>
 
   <modelVersion>4.0.0</modelVersion>
-  <artifactId>asjs-build-support</artifactId>
+
+  <artifactId>asjs-build-parent</artifactId>
   <packaging>pom</packaging>
-  <name>AS.js Support Packages</name>
-  <description />
+  <name>AS.js Build Aggregator</name>
+
+  <dependencies>
+    <dependency>
+      <groupId>org.projectodd.asjs</groupId>
+      <artifactId>asjs-modules-parent</artifactId>
+      <version>${project.version}</version>
+      <type>pom</type>
+    </dependency>
+  </dependencies>
 
   <modules>
+    <module>assembly</module>
   </modules>
-
 
 </project>
