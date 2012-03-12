@@ -1,0 +1,3 @@
+
+AS.js itself is licensed under the LGPL.  
+- Please see LICENSE-LGPL.txt.
